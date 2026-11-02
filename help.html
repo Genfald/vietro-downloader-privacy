@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6c3ef5">
+  <title>Vietro Downloader — помощь / Help</title>
+  <meta name="description" content="Как пользоваться Vietro Downloader: скачивание из Instagram, Facebook и Threads, частые вопросы и решения.">
+  <style>
+    :root { color-scheme: dark; --bg:#0b0c10; --card:#14161d; --line:rgba(255,255,255,.08); --fg:#f3f4f6; --muted:#a8abbf; --accent:#7cb7ff; --grad:linear-gradient(135deg,#6c3ef5,#00baff); }
+    * { box-sizing:border-box; margin:0; }
+    body { font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--fg); }
+    a { color:var(--accent); }
+    main { max-width:800px; margin:0 auto; padding:40px 18px 72px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:700; font-size:20px; margin-bottom:6px; }
+    .brand .dot { width:30px; height:30px; border-radius:8px; background:var(--grad); display:inline-block; }
+    .muted { color:var(--muted); font-size:14px; }
+    h1 { font-size:26px; margin:26px 0 4px; }
+    h2 { font-size:19px; margin:26px 0 10px; }
+    h3 { font-size:16px; margin:18px 0 6px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+    ul { padding-left:20px; } li { margin:4px 0; }
+    code { background:rgba(255,255,255,.08); padding:2px 7px; border-radius:6px; font-size:14px; }
+    hr { border:none; border-top:1px solid var(--line); margin:44px 0; }
+    .lang { display:flex; gap:10px; margin:14px 0 24px; }
+    .lang a { text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:5px 14px; font-size:14px; color:var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand"><span class="dot"></span>Vietro Downloader</div>
+  <div class="muted">Помощь и частые вопросы · Help &amp; FAQ</div>
+  <div class="lang"><a href="#ru">Русский</a><a href="#en">English</a></div>
+
+  <!-- ============================ RU ============================ -->
+  <h1 id="ru">Как пользоваться</h1>
+
+  <h2>Установка</h2>
+  <div class="card">
+    <ul>
+      <li>Установите расширение из Chrome Web Store (или распакованным через <code>chrome://extensions</code> → «Режим разработчика» → «Загрузить распакованное»).</li>
+      <li>После каждого обновления расширения обновите открытые вкладки Instagram / Facebook / Threads клавишей <code>F5</code>.</li>
+    </ul>
+  </div>
+
+  <h2>Instagram</h2>
+  <div class="card">
+    <ul>
+      <li><b>Пост или карусель:</b> кнопка скачивания рядом с кнопкой «Сохранить» под постом. Карусель скачивается целиком, по файлам.</li>
+      <li><b>Reels:</b> кнопка на видео, в том числе в ленте Reels (<code>/reels/…</code>).</li>
+      <li><b>Stories и Highlights:</b> кнопка в шапке сторис — скачать текущую или все.</li>
+      <li><b>Аватарка профиля:</b> кнопка на фото профиля.</li>
+      <li><b>Горячая клавиша:</b> <code>Ctrl/Cmd + Shift + D</code> — скачать то, что открыто сейчас.</li>
+      <li><b>Массово весь профиль:</b> кнопка «Download All» в шапке профиля. Папку назначьте в меню расширения → «Папка для массового скачивания» → <b>Browse</b>.</li>
+    </ul>
+  </div>
+
+  <h2>Facebook</h2>
+  <div class="card"><ul>
+    <li>Видео, Reels, Stories и крупные фото — кнопка скачивания на самом медиа, либо <code>Ctrl/Cmd + Shift + D</code>.</li>
+  </ul></div>
+
+  <h2>Threads</h2>
+  <div class="card"><ul>
+    <li>Синяя кнопка «Скачать» рядом со временем поста (у постов с фото или видео). Карусели и видео — в исходном качестве.</li>
+  </ul></div>
+
+  <h2>Мобильное окно</h2>
+  <div class="card"><ul>
+    <li>Кнопки «Мобильный Instagram» / «Мобильный Facebook» в меню открывают компактное окно с мобильной версией сайта и панелью «назад / вперёд / обновить / скачать».</li>
+  </ul></div>
+
+  <h2>Имена файлов</h2>
+  <div class="card">Файлы сохраняются как <code>ник_дата_ID-медиа_ID-автора</code> — удобно раскладывать по папкам.</div>
+
+  <h2>Если что-то не так</h2>
+  <div class="card"><ul>
+    <li><b>Кнопки пропали после обновления расширения:</b> нажмите <code>F5</code> на вкладке — старый код в открытой вкладке не заменяется автоматически.</li>
+    <li><b>«Folder not set» / папка не выбрана:</b> это нормально. Для разовых скачиваний папка не нужна — файл падает в «Загрузки». Папка нужна только для массовой выгрузки профиля.</li>
+    <li><b>Закрытый профиль:</b> массово скачать можно только у профилей, на которые вы подписаны.</li>
+    <li><b>Facebook: не нашлось видео:</b> обновите страницу (<code>F5</code>) и попробуйте снова.</li>
+  </ul></div>
+
+  <p class="muted" style="margin-top:18px">Скачивайте только свой контент или тот, на который у вас есть разрешение. Vietro Downloader не связан с Meta Platforms, Inc., Instagram, Facebook и Threads.</p>
+  <p>Связь: <a href="mailto:genfald@gmail.com">genfald@gmail.com</a></p>
+
+  <hr>
+
+  <!-- ============================ EN ============================ -->
+  <h1 id="en">How to use</h1>
+
+  <h2>Install</h2>
+  <div class="card"><ul>
+    <li>Install from the Chrome Web Store (or unpacked via <code>chrome://extensions</code> → Developer mode → Load unpacked).</li>
+    <li>After every extension update, reload open Instagram / Facebook / Threads tabs with <code>F5</code>.</li>
+  </ul></div>
+
+  <h2>Instagram</h2>
+  <div class="card"><ul>
+    <li><b>Post or carousel:</b> a download button next to the Save button under the post. Carousels download fully, file by file.</li>
+    <li><b>Reels:</b> a button on the video, including the Reels feed (<code>/reels/…</code>).</li>
+    <li><b>Stories &amp; Highlights:</b> a button in the story header — current one or all.</li>
+    <li><b>Profile picture:</b> a button on the avatar.</li>
+    <li><b>Hotkey:</b> <code>Ctrl/Cmd + Shift + D</code> downloads whatever is open now.</li>
+    <li><b>Whole profile in bulk:</b> the “Download All” button on the profile. Set the folder in the toolbar popup → folder settings → <b>Browse</b>.</li>
+  </ul></div>
+
+  <h2>Facebook</h2>
+  <div class="card"><ul>
+    <li>Videos, Reels, Stories and large photos — a button on the media, or <code>Ctrl/Cmd + Shift + D</code>.</li>
+  </ul></div>
+
+  <h2>Threads</h2>
+  <div class="card"><ul>
+    <li>A blue “Download” button next to the post time (on posts with media). Carousels and videos in original quality.</li>
+  </ul></div>
+
+  <h2>Mobile window</h2>
+  <div class="card"><ul>
+    <li>“Mobile Instagram” / “Mobile Facebook” open a compact window with the mobile site and a back / forward / reload / download toolbar.</li>
+  </ul></div>
+
+  <h2>File names</h2>
+  <div class="card">Files are saved as <code>username_date_mediaID_ownerID</code>.</div>
+
+  <h2>Troubleshooting</h2>
+  <div class="card"><ul>
+    <li><b>Buttons gone after an update:</b> press <code>F5</code> on the tab — old code in an open tab is not replaced automatically.</li>
+    <li><b>“Folder not set”:</b> normal. Single downloads don’t need a folder — the file goes to Downloads. The folder is only for bulk profile export.</li>
+    <li><b>Private account:</b> bulk download works only for accounts you follow.</li>
+    <li><b>Facebook: video not found:</b> reload the page (<code>F5</code>) and try again.</li>
+  </ul></div>
+
+  <p class="muted" style="margin-top:18px">Please download only your own content or content you have permission to save. Vietro Downloader is not affiliated with Meta Platforms, Inc., Instagram, Facebook or Threads.</p>
+  <p>Contact: <a href="mailto:genfald@gmail.com">genfald@gmail.com</a></p>
+</main>
+</body>
+</html>
